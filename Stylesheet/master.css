@@ -251,7 +251,10 @@ footer {
 
 /* Add a hover effect if you want */
 .fa:hover {
-  opacity: 0.7;
+  opacity: 0.5;
+transition: filter 1s;
+transition: transform 1s;
+transform: scale(1.1);
 }
 
 /* Set a specific color for each brand */
