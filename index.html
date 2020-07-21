@@ -21,7 +21,8 @@
 		<a class="active" href="#Home">Home</a>
 		<a href="#About">About</a>
 		<a href="#GitHub">GitHub</a>
-		<a href="#Contact">Contact</a>
+		<a onclick="openForm()" ondblclick="closeForm()">Contact</a>
+		<!--JS to support Contact Form on navbar-->
 		<a href="#socials">Follow Me</a>
 	</div>
 
@@ -45,7 +46,8 @@
 		<p>
 			<strong>
 				<center>
-					<q>You might not think that programmers are artists, but programming is an extremely creative profession.
+					<q>You might not think that programmers are artists, but programming is an extremely creative
+						profession.
 						<br>It's logic-based creativity.
 					</q>
 					<br>-John Romero<br>
@@ -58,6 +60,63 @@
 		</p>
 	</div>
 
+	<!-- Slideshow section -->
+	<div id="Slideshow">
+		<div id="Slideshow_Background">
+			<div id="Slideshow_Container">
+
+				<div class="mySlides fade">
+					<div class="Slide_Number">1 / 5</div>
+					<img class="Slide_Show_Images" src="./Stylesheet/image/MeCutout3.png" style="width:100%">
+					<div class="text">I'm available to assist you on your project!</div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="Slide_Number">2 / 5</div>
+					<img class="Slide_Show_Images" src="./Stylesheet/image/HTML5_CSS_JavaScript.png"
+						style="width:100%">
+					<div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,
+					</div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="Slide_Number">3 / 5</div>
+					<img class="Slide_Show_Images" src="./Stylesheet/image/csharp-logo.png" style="width:100%">
+					<div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="Slide_Number">4 / 5</div>
+					<img class="Slide_Show_Images" src="./Stylesheet/image/logoAzureSql.png" style="width:100%">
+					<div class="text">back end development, databases and SQL.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="Slide_Number">5 / 5</div>
+					<img class="Slide_Show_Images" src="./Stylesheet/image/contact.png" style="width:100%">
+					<div class="text">
+						<a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+					</div>
+				</div>
+
+				<a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+				<span class="dot" onclick="currentSlide(5)"></span>
+
+			</div>
+		</div>
+	</div>
+
 	<!-- About section -->
 	<div class="Row" id="About">
 		<div class="Column_2">
@@ -68,11 +127,12 @@
 		<div class="Column_1">
 			<!-- Right column -->
 			<h1>About</h2>
-				<p>I am a software developer looking to turn my hobby into a career.  I am a proud father of three and love gaming and working on other projects in my spare time. <br><br>I am a student at <a href="https://www.learncodinganywhere.com"
-						target="_blank">The Tech Academy</a>. Currently going through the C# Software Developer Boot Camp, and trained and experienced
+				<p>I am a software developer looking to turn my hobby into a career. I am a proud father of three and
+					love gaming and working on other projects in my spare time. <br><br>I am a student at <a
+						href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>. Currently going
+					through the C# Software Developer Boot Camp, and trained and experienced
 					in the following web and programming languages: HTML, CSS, JavaScript and more. <br><br>I
-					am on the path to become a full-stack developer and would love to work with you on your project. <a
-						href="#Contact">Contact</a> me below!</p>
+					am on the path to become a full-stack developer and would love to work with you on your project. <a onclick="openForm()" ondblclick="closeForm()" style="cursor: pointer;">Contact</a> me here.
 		</div>
 	</div>
 
@@ -94,34 +154,36 @@
 		</div>
 	</div>
 
-	<!-- Contact section -->
-	<div class="Row" id="Contact">
-		<div class="Column_3">
-			<!-- Contact image, left column -->
-			<img src="./Stylesheet/image/contact.jpeg" alt="Contact_Image">
-		</div>
+	<!-- Contact form, right "column" -->
+	<div id="Contact">
+		<button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+		<div class="form-popup" id="myForm">
+			<form action="https://formspree.io/xpzykwbb" method="POST" class="form-container">
+				<!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+				<h1>Contact</h1>
+				<label for="name"><b>Name</b></label>
+				<input type="text" placeholder="Type your name here" name="name" required>
+				<label for="phone"><b>Phone</b></label>
+				<input type="text" placeholder="Enter your phone number here" name="phone">
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Type your email address here" name="email" required>
+				<label for="message"><b>Message</b></label>
+				<input type="text" placeholder="Type your message here" name="message">
 
-		<div class="Column_1">
-			<!-- Contact form, right "column" -->
-			<h1>Contact</h2>
-				<form action="" method="get">
-					<!-- This specifies where to send the form data and how; it is left blank -->
-					<label>Name:</label>
-					<input type="text" placeholder="Your Name">
-					<label>Email:</label>
-					<input type="text" id="Email" name="Email" placeholder="Your Email">
-					<label>Message:</label>
-					<input type="text" id="Message" name="Message" placeholder="Your Message...">
-					<input type="submit" value="Submit">
-				</form>
+				<button type="submit" class="btn">SUBMIT</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+			</form>
 		</div>
 	</div>
 
 	<!-- Footer section -->
 	<footer id="socials">
 		<p>Follow Me:</p>
-		<a href="https://www.linkedin.com/in/willbcox" class="fa fa-linkedin"></a> <a href="#" class="fa fa-twitter"></a> <a href="#" class="fa fa-twitch"></a>
+		<a href="https://www.linkedin.com/in/willbcox" class="fa fa-linkedin"></a> <a href="#"
+			class="fa fa-twitter"></a> <a href="#" class="fa fa-twitch"></a>
 	</footer>
+
+	<script src="./scripts/webportfolio.js"></script>
 
 </body>
 
