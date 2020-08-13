@@ -27,8 +27,8 @@ body {
 	transition: 3s opacity;
 	/* This causes a 3 second fade in, you can change this time if you choose */
 	letter-spacing: .2vw;
-	font-family: Avant Garde, Helvetica;
-	font-size: 1.5vw;
+	font-family: Drama Sans;
+	font-size: 1vw;
 
 }
 
@@ -71,9 +71,9 @@ body.fade-out {
 	/* This adds padding around our text */
 	text-decoration: none;
 	/* This gets rid of the underlines under the text on our navbar */
-	font-family: Avant Garde, Helvetica;
+	font-family: 'Drama Sans';
 	/* This specifies the font family for text on our navbar */
-	font-size: 1.5vw;
+	font-size: 1vw;
 	/* This specifies the font size for text on our navbar */
 	text-align: center;
 	/* This centers the text within its container */
@@ -281,7 +281,7 @@ body.fade-out {
 	text-align: center;
 	font-family: Perpetua, Rockwell Extra Bold;
 	letter-spacing: .1vw;
-	font-size: 1.5vw;
+	font-size: 1vw;
 	background-color: rgba(0, 0, 0, 0.75);
 	font-weight: bold;
 	border-radius: 7px 7px 7px 7px;
@@ -294,7 +294,7 @@ body.fade-out {
 	top: 0;
 	font-family: Perpetua, Rockwell Extra Bold;
 	letter-spacing: .1vw;
-	font-size: 1.5vw;
+	font-size: 1vw;
 	font-weight: bold;
 	display: none;
 }
@@ -340,7 +340,7 @@ body.fade-out {
 	/* This ensures one column takes up half the page width */
 	padding: 1.6%;
 	background-color: #f2f2f2;
-	height: 750px;
+	height: 550px;
 	/* You may need to adjust this to fit your content */
 }
 
@@ -348,7 +348,7 @@ body.fade-out {
 	float: left;
 	width: 50%;
 	padding: 1.6%;
-	height: 750px;
+	height: 550px;
 	/* You may need to adjust this to fit your content */
 	background-color: rgba(66, 66, 66, 0.99);
 }
@@ -367,7 +367,7 @@ body.fade-out {
 h1 {
 	text-transform: uppercase;
 	/* We are capitalizing our headings */
-	font-family: "Trebuchet MS", Optima;
+	font-family: 'Drama Sans';
 	text-align: center;
 	margin-top: 3%;
 	/* We are adding a small margin above the headings */
@@ -376,21 +376,21 @@ h1 {
 
 /* Paragraph elements */
 p {
-	font-family: Perpetua, Rockwell Extra Bold;
+	font-family: 'Drama Sans';
 	text-align: justify;
 	letter-spacing: .1vw;
 	/* This expands the text slightly */
-	font-size: 1.5vw;
+	font-size: 1vw;
 	padding-left: 1vw;
 	padding-right: 1vw;
 }
 
 /* Center align elements - this embraces all centered text */
 center {
-	font-family: Perpetua, Rockwell Extra Bold;
+	font-family: 'Drama Sans';
 	text-align: center;
 	letter-spacing: .1vw;
-	font-size: 1.5vw;
+	font-size: 1vw;
 	padding-left: 5vw;
 	padding-right: 5vw;
 }
@@ -501,7 +501,7 @@ img:hover {
 	margin: .6vw 0 .6vw 0;
 	border: none;
 	background: Gainsboro;
-	font-family: Helvetica, Avant Garde;
+	font-family: 'Drama Sans';
 	font-size: 1vw;
 }
 
